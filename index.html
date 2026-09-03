@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>محمد هشام بركات - HEX | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">HEX</div>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link active" data-section="home">الرئيسية</a></li>
+                <li><a href="#skills" class="nav-link" data-section="skills">مهاراتي</a></li>
+                <li><a href="#projects" class="nav-link" data-section="projects">مشاريعي</a></li>
+                <li><a href="#achievements" class="nav-link" data-section="achievements">إنجازاتي</a></li>
+                <li><a href="#testimonials" class="nav-link" data-section="testimonials">التقييمات</a></li>
+                <li><a href="#contact" class="nav-link" data-section="contact">تواصل</a></li>
+            </ul>
+            <div class="nav-controls">
+                <button class="audio-toggle" id="audioToggle" title="تشغيل/كتم الموسيقى">🔊</button>
+                <button class="lang-toggle" id="langToggle">English</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Audio Element -->
+    <audio id="bgAudio" preload="none">
+        <source src="assets/resonance.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title" data-i18n="hero_title">محمد هشام بركات</h1>
+                <p class="hero-subtitle" data-i18n="hero_subtitle">HEX</p>
+                <p class="hero-description" data-i18n="hero_description">متخصص في الأمن السيبراني</p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary" data-i18n="btn_projects">عرض المشاريع</a>
+                    <a href="#contact" class="btn btn-secondary" data-i18n="btn_contact">تواصل معي</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section id="stats" class="stats-section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="stats_title">أرقامي</h2>
+            <div class="stats-grid">
+                <div class="stat-card" id="stat-projects">
+                    <div class="stat-number" data-stat="projects">-</div>
+                    <div class="stat-label" data-i18n="stat_projects">المشاريع</div>
+                </div>
+                <div class="stat-card" id="stat-certificates">
+                    <div class="stat-number" data-stat="certificates">-</div>
+                    <div class="stat-label" data-i18n="stat_certificates">الشهادات</div>
+                </div>
+                <div class="stat-card" id="stat-achievements">
+                    <div class="stat-number" data-stat="achievements">-</div>
+                    <div class="stat-label" data-i18n="stat_achievements">الإنجازات</div>
+                </div>
+                <div class="stat-card" id="stat-testimonials">
+                    <div class="stat-number" data-stat="testimonials">-</div>
+                    <div class="stat-label" data-i18n="stat_testimonials">التقييمات</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="skills_title">مهاراتي</h2>
+            <div id="skillsContainer" class="skills-grid">
+                <div class="empty-state" data-i18n="empty_skills">لم تضف أي مهارات بعد</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="projects_title">مشاريعي</h2>
+            <div id="projectsContainer" class="projects-grid">
+                <div class="empty-state" data-i18n="empty_projects">سيتم إضافة المشاريع قريبًا</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="achievements-section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="achievements_title">إنجازاتي</h2>
+            <div id="achievementsContainer" class="achievements-list">
+                <div class="empty-state" data-i18n="empty_achievements">لم تضف أي إنجازات بعد</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials-section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="testimonials_title">ماذا يقولون عني؟</h2>
+            <div id="testimonialsContainer" class="testimonials-grid">
+                <div class="empty-state" data-i18n="empty_testimonials">التقييمات ستتم إضافتها قريبًا</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="certificates-section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="certificates_title">شهاداتي</h2>
+            <div id="certificatesContainer" class="certificates-grid">
+                <div class="empty-state" data-i18n="empty_certificates">لم تضف أي شهادات بعد</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="contact_title">تواصل معي</h2>
+            <div class="contact-info">
+                <div class="contact-card">
+                    <h3 data-i18n="contact_name">الاسم</h3>
+                    <p>محمد هشام بركات</p>
+                </div>
+                <div class="contact-card">
+                    <h3 data-i18n="contact_phone">رقم التواصل</h3>
+                    <p><a href="tel:+201030403929">+20 103 040 3929</a></p>
+                </div>
+                <div class="contact-card">
+                    <h3 data-i18n="contact_location">الموقع</h3>
+                    <p>مصر</p>
+                </div>
+                <div class="contact-card">
+                    <h3 data-i18n="contact_specialty">التخصص</h3>
+                    <p>الأمن السيبراني</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p data-i18n="footer_text">&copy; 2026 محمد هشام بركات - HEX. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
